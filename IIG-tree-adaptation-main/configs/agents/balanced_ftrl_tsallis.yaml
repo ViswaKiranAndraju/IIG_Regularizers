@@ -1,0 +1,18 @@
+agent_class: 'agents.balanced_ftrl.BalancedFTRLTsallis'
+
+init_kwargs:
+  q_param: 1.5         # Tsallis q parameter, adjust to change the non-extensivity
+  lr_constant: 1.0     # Learning rate constant
+  lr_pow_X: 0.0        # Learning rate power for X dimension
+  lr_pow_A: 0.0        # Learning rate power for A dimension
+  lr_pow_H: 0.0        # Learning rate power for H dimension
+  lr_pow_T: 0.0        # Learning rate power for T dimension
+  ix_constant: 0.05    # Implicit exploration constant
+  ix_pow_X: 0.0        # Implicit exploration power for X dimension
+  ix_pow_A: 0.0        # Implicit exploration power for A dimension
+  ix_pow_H: 0.0        # Implicit exploration power for H dimension
+  ix_pow_T: 0.0        # Implicit exploration power for T dimension
+
+  name: 'BalancedFTRLTsallis'
+
+regularization: 'tsallis_entropy'
